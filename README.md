@@ -1,0 +1,2 @@
+# komplex
+Komplex projekt feladat
