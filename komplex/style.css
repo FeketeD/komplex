@@ -1,0 +1,23 @@
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+}
+
+/*NAVBAR*/
+.navbar-brand{
+    cursor: default;
+}
+nav{
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+/*BUTTON*/
+.btn-custom{
+    background-color: rgb(252, 17, 158);
+    border-radius: 0.7em;
+}
+.btn-custom:hover{
+    background-color: rgb(178, 16, 113);
+}
