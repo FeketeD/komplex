@@ -16,32 +16,115 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark p-3">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">LOGO</a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark p-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOGO</a>
+    
+            <div class="collapse navbar-collapse justify-content-center " id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Placeholder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Placeholder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-lg btn-login" id="login">Login</button>
+        </nav>
+    </header>
 
-        <div class="collapse navbar-collapse justify-content-center " id="navbarToggler">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Placeholder</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Placeholder</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+    <section class="home">
+        <div class="form-container">
+            <div class="signup-form">
+                <form action="" name="signup">
+                    <div class="container">
+                        <div class="panel p-3 text-center">
+                            <h1 class="my-3">Sign up</h1>
+                            <input type="text" class="form-control my-3" placeholder="Name" id="name">
+                            <input type="text" class="form-control my-3" placeholder="e-mail" id="email">
+                            <input type="password" class="form-control my-3" placeholder="Password" id="password">
+                            <div class="d-flex">
+                                <select id="age" class="form-select w-50">
+                                    <option value="">18-20</option>
+                                    <option value="">21-24</option>
+                                    <option value="">25-30</option>
+                                    <option value="">30+</option>
+                                </select>
+                                <select id="gender" class="form-select w-50 mx-1">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-control my-3" placeholder="Profession" id="profession">
+                            <fieldset>
+                                <legend>Sector</legend>
+                                <div class="d-flex justify-content-center sector">
+                                    <div class="sectorLeft mx-3">
+                                        <div>
+                                            <input type="checkbox" name="gepipar" id="gepipar">
+                                            <label for="gepipar">Gépipar</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="informatika" id="informatika">
+                                            <label for="informatika">Informatika</label>
+                                        </div> 
+                                        <div>
+                                            <input type="checkbox" name="jogi" id="jogi">
+                                            <label for="jogi">Jogi</label>
+                                        </div>
+                                    </div>
+                                    <div class="sectorMiddle mx-3">
+                                        <div>
+                                            <input type="checkbox" name="szepeszet" id="szepeszet">
+                                            <label for="szepeszet">Szépészet</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="gazdasagi" id="gazdasagi">
+                                            <label for="gazdasagi">Gazdasági</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="bolcseszet" id="bolcseszet">
+                                            <label for="bolcseszet">Bölcsészet</label>
+                                        </div>
+                                    </div>
+                                    <div class="sectorRight mx-3">
+                                        <div>
+                                            <input type="checkbox" name="muszaki" id="muszaki">
+                                            <label for="muszaki">Műszaki</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="orvosi" id="orvosi">
+                                            <label for="orvosi">Orvosi</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="sport" id="sport">
+                                            <label for="sport">Sport</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </fieldset>
+                            <button type="button" class="btn btn-signup btn-lg my-3">Sign up now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <button type="button" class="btn btn-lg btn-custom" id="login">Login</button>
-    </nav>
-
+        
+    </section>
+    
     <script src="script.js"></script>
 </body>
 
