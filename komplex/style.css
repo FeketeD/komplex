@@ -1,6 +1,6 @@
 /* NAVBAR */
 .header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 100;
 }
@@ -57,11 +57,30 @@ nav{
         width: 25%!important;
     }
 }
+@media (max-width: 400px){
+    .panel {
+        margin-top: 35px;
+        font-size: 0.7em;
+    }
+    .inputMargin{
+        margin: 2px 0!important;
+    }
+    .form-control, .form-select{
+        height: 2em;
+    }
+}
 
 
 /* PANEL ELEMENTS */
 .sector{
     text-align: left;
+    background-color: rgba(215, 215, 215, 0.667);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+
 }
 .inputMargin{
     margin: 5px 0;

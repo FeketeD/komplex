@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link rel="icon" type="image/x-icon" href="images/fire.jpg">
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/c58fd7aeea.js" crossorigin="anonymous"></script>
     <!--BOOTSTRAP-->
@@ -20,7 +21,7 @@
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">LOGO</a>
+            <a class="navbar-brand">LOGO</a>
     
             <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -45,10 +46,10 @@
     <section class="home">
         <div class="form-container">
             <div class="signup-form">
-                <form action="" name="signup">
+                <form action="" method="GET" name="signup" id="signup">
                     <div class="container">
                         <div class="row">
-                            <div class="panel p-3 text-center col-8 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                            <div class="panel p-3 text-center col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                                 <h1 class="inputMargin">Sign up</h1>
     
                                 <div class="form-align">
@@ -57,12 +58,12 @@
                                 </div>
                                 
                                 <div class="form-align">
-                                    <i class="fa-solid fa-envelope fa-lg"></i>
+                                    <i class="fa-solid fa-envelope fa-lg" id="emailIcon"></i>
                                     <input type="text" class="form-control inputMargin" placeholder="e-mail*" id="email" required>
                                 </div>
                                 
                                 <div class="form-align">
-                                    <i class="fa-solid fa-lock fa-lg"></i>
+                                    <i class="fa-solid fa-lock-open fa-lg" id="passwordIcon"></i>
                                     <input type="password" class="form-control inputMargin" placeholder="Password*" id="password" required>
                                 </div>
                                 
@@ -79,8 +80,8 @@
         
                                     <select id="gender" class="form-select w-50" required>
                                         <option value="" selected disabled>Gender*</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
                                     </select>
                                 </div>
                                 
@@ -92,54 +93,56 @@
                                 
                                 <fieldset>
                                     <legend>Sector</legend>
-                                    <div class="d-flex justify-content-center sector">
+                                    <div class="sector">
                                         <div class="sectorLeft mx-3">
                                             <div>
-                                                <input type="checkbox" name="gepipar" id="gepipar">
-                                                <label for="gepipar">Gépipar</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Sales" id="Sales">
+                                                <label for="Sales">Sales</label>
                                             </div>
                                             <div>
-                                                <input type="checkbox" name="informatika" id="informatika">
-                                                <label for="informatika">Informatika</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Trade" id="Trade">
+                                                <label for="Trade">Trade</label>
                                             </div> 
                                             <div>
-                                                <input type="checkbox" name="jogi" id="jogi">
-                                                <label for="jogi">Jogi</label>
-                                            </div>
-                                        </div>
-                                        <div class="sectorMiddle mx-3">
-                                            <div>
-                                                <input type="checkbox" name="szepeszet" id="szepeszet">
-                                                <label for="szepeszet">Szépészet</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Law" id="Law">
+                                                <label for="Law">Law</label>
                                             </div>
                                             <div>
-                                                <input type="checkbox" name="gazdasagi" id="gazdasagi">
-                                                <label for="gazdasagi">Gazdasági</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Finance" id="Finance">
+                                                <label for="Finance">Finance</label>
                                             </div>
                                             <div>
-                                                <input type="checkbox" name="bolcseszet" id="bolcseszet">
-                                                <label for="bolcseszet">Bölcsészet</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Transport" id="Transport">
+                                                <label for="Transport">Transport</label>
                                             </div>
                                         </div>
                                         <div class="sectorRight mx-3">
                                             <div>
-                                                <input type="checkbox" name="muszaki" id="muszaki">
-                                                <label for="muszaki">Műszaki</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Economics" id="Economics">
+                                                <label for="Economics">Economics</label>
                                             </div>
                                             <div>
-                                                <input type="checkbox" name="orvosi" id="orvosi">
-                                                <label for="orvosi">Orvosi</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Production" id="Production">
+                                                <label for="Production">Production</label>
                                             </div>
                                             <div>
-                                                <input type="checkbox" name="sport" id="sport">
-                                                <label for="sport">Sport</label>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Construction" id="Construction">
+                                                <label for="Construction">Construction</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Education" id="Education">
+                                                <label for="Education">Education </label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" class="form-check-input" name="sector" value="Sport" id="Sport">
+                                                <label for="Sport">Sport</label>
                                             </div>
                                         </div>
                                     </div>
                                     
                                     
                                 </fieldset>
-                                <button type="submit" class="btn btn-signup btn-lg my-3">Sign up now</button>
+                                <button type="submit" class="btn btn-signup btn-lg mt-2">Sign up now</button>
                             </div>
                         </div>
                         
