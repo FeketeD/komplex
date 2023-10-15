@@ -21,7 +21,7 @@
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand">LOGO</a>
+            <a class="navbar-brand" id="logo">LOGO</a>
     
             <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -39,7 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" class="btn btn-lg btn-login" id="login">Login</button>
+            <button type="button" class="btn btn-lg btn-login loginBtn" id="login">Login</button>
         </nav>
     </header>
 
@@ -54,41 +54,51 @@
     
                                 <div class="form-align">
                                     <i class="fa-solid fa-user fa-lg" id="userIcon"></i>
-                                    <input type="text" class="form-control inputMargin" placeholder="Name*" id="name" required>
+                                    <input type="text" class="form-control inputMargin" placeholder="Name*" id="name">
                                 </div>
                                 
                                 <div class="form-align">
                                     <i class="fa-solid fa-envelope fa-lg" id="emailIcon"></i>
-                                    <input type="text" class="form-control inputMargin" placeholder="e-mail*" id="email" required>
+                                    <input type="text" class="form-control inputMargin" placeholder="e-mail*" id="email">
                                 </div>
                                 
                                 <div class="form-align">
-                                    <i class="fa-solid fa-lock-open fa-lg" id="passwordIcon"></i>
-                                    <input type="password" class="form-control inputMargin" placeholder="Password*" id="password" required>
+                                    <i class="fa-solid fa-lock-open fa-lg" id="passwordIcon" itemid="passwordIcon"></i>
+                                    <div class="form-control form-align inputMargin" id="passwordBox">
+                                        <input type="password" class="passwordInput form-control" id="password" placeholder="Password*" onfocusout="valami()" onfocus="">
+                                        <i class="fa-solid fa-eye-slash fa-lg" id="passwordToggle"></i>
+                                    </div>
                                 </div>
                                 
     
                                 <div class="form-align inputMargin">
-                                    <i class="fa-solid fa-person-cane fa-lg"></i>
-                                    <select id="age" class="form-select w-50" required>
-                                        <option value="" selected disabled>Age*</option>
-                                        <option value="18-20">18-20</option>
-                                        <option value="21-24">21-24</option>
-                                        <option value="25-30">25-30</option>
-                                        <option value="30+">30+</option>
-                                    </select>
+                                    <div class="form-align">
+                                        <i class="fa-solid fa-person-cane fa-lg" id="ageIcon"></i>
+                                        <select id="age" class="form-select w-100">
+                                            <option value="" selected disabled hidden>Age*</option>
+                                            <option value="18-20">18-20</option>
+                                            <option value="21-24">21-24</option>
+                                            <option value="25-30">25-30</option>
+                                            <option value="30+">30+</option>
+                                        </select>
+                                    </div>
         
-                                    <select id="gender" class="form-select w-50" required>
-                                        <option value="" selected disabled>Gender*</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                    </select>
+                                    <div class="form-align">
+                                        <i class="fa-solid fa-venus-mars fa-lg mx-1" id="genderIcon"></i>
+                                        <select id="gender" class="form-select w-100">
+                                            <option value="" selected disabled hidden>Gender*</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other" disabled title="There are only 2 genders..">Other</option>
+                                        </select>
+                                    </div>
+                                    
                                 </div>
                                 
     
                                 <div class="form-align">
-                                    <i class="fa-solid fa-briefcase fa-lg"></i>
-                                    <input type="text" class="form-control inputMargin" placeholder="Profession*" id="profession" required>
+                                    <i class="fa-solid fa-briefcase fa-lg" id="profIcon"></i>
+                                    <input type="text" class="form-control inputMargin" placeholder="Profession*" id="profession">
                                 </div>
                                 
                                 <fieldset>
@@ -140,12 +150,11 @@
                                         </div>
                                     </div>
                                     
-                                    
                                 </fieldset>
                                 <button type="submit" class="btn btn-signup btn-lg mt-2">Sign up now</button>
                             </div>
                         </div>
-                        
+
                     </div>
                 </form>
             </div>
